@@ -1,10 +1,8 @@
 #pragma once
-
 #include <string>
 #include <vector>
 #include <memory>
 #include <iostream>
-
 #include "Item.h"
 
 struct Character
@@ -53,14 +51,9 @@ struct Character
         std::cout << getName() << "'s attack damage level has been boosted to " << attackDamage << std::endl;
     }
 
-    void printStats()
-    {
-        std::cout << getName() << "'s stats: " << std::endl;
-        std::cout << getStats(); //make your getStats() use a function from the Utility.h
-        
-        std::cout << std::endl;
-        std::cout << std::endl;
-    }
+    void printStats();
+    void victoryBoost( int& currentStat, int& initialStat );
+    
 protected:
     std::vector<std::unique_ptr<Item>> defensiveItems;
     std::vector<std::unique_ptr<Item>> helpfulItems;

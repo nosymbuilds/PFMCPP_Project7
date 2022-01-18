@@ -1,6 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
+
 /*
 Project 7: Part 1/1
  video: Chapter 4 Part 2 
@@ -26,13 +24,13 @@ it's very easy to mess this task up.
 
  4) you're going to need to implement the pure virtual functions in Character-derived classes and Item classes
     
- 5) implement the constructors for all the Character-derived types. 
+ 5) implement the constructors for all the Character-derived types.
         Dragon's attackDamage is 80
         DragonSlayer's attackDamage is 4
         Dwarf's attackDamage is 4
         Paladin's attackDamage is 10
 
- 6) Each character type gets some Helpful Items and Defensive Items when they're constructed
+ 6) Each character type gets some Helpful Items and Defensive Items when they're constructed 
         Use the functions in Utility.h to give each Character (excluding Dragon, because dragons don't carry items) a RANDOM NUMBER of helpful and defensive items: 
             helpfulItems = makeHelpfulItems(2);
             defensiveItems = makeDefensiveItems(1);
@@ -48,7 +46,9 @@ it's very easy to mess this task up.
 
  9) When you compare your output with the expected output, it is fine if the items counts don't match exactly.   It's not important if your DragonSlayer has 5 helpful items, but the expected output shows 3. 
  */
-
+#include <iostream>
+#include <string>
+#include <vector>
 #include "Item.h"
 #include "Character.h"
 #include "Dwarf.h"
